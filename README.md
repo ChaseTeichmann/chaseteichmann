@@ -1,2 +1,0 @@
-# chaseteichmann
-personal website
