@@ -58,7 +58,7 @@
 }
 
 .animated-title > div div {
-  font-size: 12vmin;
+  font-size: 10vmin;
   padding: 2vmin 0;
   position: absolute;
 }
@@ -81,7 +81,7 @@
 }
 
 .animated-title > div.text-top div span:first-child {
-  color: #FFFFFF;
+  color: #222222;
 }
 .animated-title > div.text-top div span:first-child .text-shadow-drop-bottom {
   animation: text-shadow-drop-bottom 0.6s both;
