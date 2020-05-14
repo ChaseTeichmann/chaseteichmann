@@ -6,6 +6,6 @@
 </head>
 <link rel="stylesheet" href="app/src/index.scss">
 <body>
-<h1> Hello </h1>
+<h1> This is weird</h1>
 </body>
 </html>
