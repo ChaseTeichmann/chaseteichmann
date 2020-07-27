@@ -41,8 +41,9 @@
 }
 .animated-title {
   color: #222;
-  font-family: Roboto, Arial, sans-serif;
-  height: 90vmin;
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: bold;
+  height: 100vmin;
   left: 50%;
   position: absolute;
   top: 50%;
