@@ -95,4 +95,8 @@
   transform: translate(0, -100%);
 }
 
+.resume{
+  position: fixed;
+  top: 400px;
+}
 /*# sourceMappingURL=index.css.map */
