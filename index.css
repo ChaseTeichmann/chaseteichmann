@@ -99,5 +99,6 @@
   position: fixed;
   top: 400px;
   margin-top: 400px;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=index.css.map */
