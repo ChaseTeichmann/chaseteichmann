@@ -4,6 +4,7 @@
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 
 @keyframes showTopText {
