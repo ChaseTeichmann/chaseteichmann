@@ -1,16 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:700");
 .background {
   background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
 }
 
-.resume{
-  position: fixed;
-  top: 400px;
-  margin-top: 400px;
-  scroll-behavior: smooth;
-}
 /*# sourceMappingURL=index.css.map */
