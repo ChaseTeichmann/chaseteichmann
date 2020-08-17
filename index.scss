@@ -4,22 +4,6 @@
   background-repeat: no-repeat;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1.4fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "Name . . Sections Sections Sections" "About Info Info Info Info Info" "About Info Info Info Info Info";
-}
-
-.Info { grid-area: Info; }
-
-.About { grid-area: About; }
-
-.Name { grid-area: Name; }
-
-.Sections { grid-area: Sections; }
-
 .Sections ul {
   list-style-type: none;
   margin: 0;
