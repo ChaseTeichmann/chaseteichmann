@@ -28,4 +28,14 @@
   background-color: #111;
 }
 
+.image-badge {
+  text-align: center !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.image-region {
+  display: inline;
+}
+
 /*# sourceMappingURL=index.css.map */
