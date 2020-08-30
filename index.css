@@ -28,30 +28,25 @@
   padding-left: 0;
 }
 
-.Sections ul {
-  top: 100%;
-  right: 100%;
-  z-index: 1;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.vertical-menu {
+  width: 200px;
 }
 
-.Sections li {
-  float: right;
-}
-
-.Sections li a {
-  display: block;
+.vertical-menu a {
+  background-color: #ffffff;
   color: black;
+  display: block;
+  padding: 12px;
+  font-style: oblique;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-.Sections li a:hover {
-  background-color: lightgray;
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  color: #111111;
 }
 
 .image-badge {
@@ -63,7 +58,7 @@
 .centered {
   position: absolute;
   width: inherit;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -78,10 +73,13 @@
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
+  text-underline: #111111;
+  text-decoration: underline;
 }
 
 .jobTitle {
-  margin-top: -20;
+  padding-top: 5px;
+  margin-top: 0;
   margin-bottom: 0;
   color: #111;
   font-family: "Helvetica Neue", sans-serif;
@@ -92,7 +90,8 @@
 }
 
 .Email {
-  margin-top: -20;
+  padding-top: 5px;
+  margin-top: 0;
   margin-bottom: 0;
   color: #111;
   font-family: "Helvetica Neue", sans-serif;
@@ -100,44 +99,6 @@
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
