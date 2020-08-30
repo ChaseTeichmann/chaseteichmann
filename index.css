@@ -68,7 +68,7 @@
   margin-bottom: 0;
   color: #111;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 75px;
+  max-font-size: 75px;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 1;
@@ -83,7 +83,7 @@
   margin-bottom: 0;
   color: #111;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 40px;
+  max-font-size: 40px;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
@@ -95,7 +95,7 @@
   margin-bottom: 0;
   color: #111;
   font-family: "Helvetica Neue", sans-serif;
-  font-size: 25px;
+  max-font-size: 25px;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
