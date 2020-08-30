@@ -1,37 +1,143 @@
 .background {
-  background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
   /* Center and scale the image nicely */
   background-repeat: no-repeat;
+  max-height: inherit;
+  max-width: 100%;
+}
+
+.background img {
+  background-image: url("https://i.pinimg.com/originals/ef/7f/b1/ef7fb1b37078b6a2aef8e40710446bfa.jpg");
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.col-lg-12 {
+  position: relative;
+  height: 1000px;
+  width: auto;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .Sections ul {
+  top: 100%;
+  right: 100%;
+  z-index: 1;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 .Sections li {
-  float: left;
+  float: right;
 }
 
 .Sections li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .Sections li a:hover {
-  background-color: #111;
+  background-color: lightgray;
 }
 
 .image-badge {
   text-align: center !important;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.centered {
+  position: absolute;
+  width: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.jobTitle {
+  margin-top: -20;
+  margin-bottom: 0;
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.Email {
+  margin-top: -20;
+  margin-bottom: 0;
+  color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
