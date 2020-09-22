@@ -25,36 +25,29 @@
         <div class="row">
             <div class="col-lg-2" style="padding-left: 0px; padding-right: 0px">
                 <div class="vertical-menu">
-                    <a href="#" class="active">Frameworks/Languages</a>
-                    <a href="#">Database Experience</a>
-                    <a href="#">Development Environments</a>
-                    <a href="#">Career Skills</a>
-                    <a href="#">Internship</a>
-                    <a href="#">Work Experience</a>
-                    <a href="#">Hackathon Experience</a>
-                    <a href="#">Education</a>
-                    <a href="#">Educational Projects</a>
+                    <a onclick="developmentDIV()">Development Environments</a>
+                    <a onclick="skillsDIV()">Career Skills</a>
+                    <a onclick="workDIV()">Work Experience</a>
+                    <a onclick="educationDIV()">Education</a>
+                    <a onclick="projectsDIV()">Personal Projects</a>
                 </div>
             </div>
-
-            <div class="col-lg-9">
-                <div class="row">
-                    <div class="col-lg-5">
+            <div class="col-lg-10 pull-right">
+            <div class="col-lg-12" id="educationDIV">
+                    <div class="col-lg-9" style="padding-top: 50px;">
                         <img class="ycp"
                              src="data:image/png;base64,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"
                              alt="YCP">
                     </div>
-                    <h4>Education</h4>
-                    <div class="col-lg-4">
-                        <p>Class of 2020</p>
-                        <p>Bachelor of Science: Computer Science</p>
-                        <p>Minors in Marketing and Mathematics</p>
-                        <p>Zeta Beta Tau Alumni</p>
-                    </div>
+                        <h4>Class of 2020</h4>
+                        <h5>Bachelor of Science: Computer Science</h5>
+                        <h5>Minors in Marketing and Mathematics</h5>
+                        <h5>Zeta Beta Tau Alumni</h5>
+                        <h5>Relevant Courses: </h5><h6>Data Structures | Network Protocols | Analysis of Algorithms | Software Engineering</h6>
                 </div>
-            </div>
             <div>
 
+                <div class="col-lg-12 pull-right" id="developmentDIV">
                 <div class="col-md-3 pull-left">
                     <h4>Developer Experience</h4>
                 </div>
@@ -167,7 +160,14 @@
                         <p>Docker</p>
                     </div>
                 </div>
-            </div>
+                    <p>Development Environments: WebStorm | DataGrip | Eclipse | Atom | Visual Studio | Xcode</p>
+                    Frameworks and Languages: JavaScript| TypeScript | Java | Node.JS| Angular.JS | React-Native | SQL
+                    Database Experience: PostgresSQL | Firebase | mySQL | DerbyDB
+                    Other Tools and Services: AWS | Docker | DataDog | Gulp | OAuth2 | ESLint | Bitbucket | GitHub
+                    Skills: User Oriented | Problem Solving | Initiative Taker | Scrum Methodologies | Quick Learning</p>
+
+                </div>
+        </div>
         </div>
 
         <!--
@@ -177,23 +177,34 @@
         <img alt="" src="" style="width: 100px; height: 100px;"/>
 
         -->
-
-        <p>Development Environments: WebStorm | DataGrip | Eclipse | Atom | Visual Studio | Xcode</p>
-        Frameworks and Languages: JavaScript| TypeScript | Java | Node.JS| Angular.JS | React-Native | SQL
-        Database Experience: PostgresSQL | Firebase | mySQL | DerbyDB
-        Other Tools and Services: AWS | Docker | DataDog | Gulp | OAuth2 | ESLint | Bitbucket | GitHub
-        Skills: User Oriented | Problem Solving | Initiative Taker | Scrum Methodologies | Quick Learning</p>
+        <div id="workDIV">
         <h4>Work Experience</h4>
-        <p>Senior Software Design | York College of Pennsylvania | Fall Semester 2019
-            Developed a personal management mobile application in React-Native for iOS
-            YCP Hackathon | York College of Pennsylvania | October 2018
-            Developed a Java application with JavaFX GUI that compares sets of data from a colorimeter device
-            Awarded 1st place for fulfilling the sponsor’s challenge
-            Awarded 3rd place for Best YCP Hack and 3rd place for Best of Show
-            Software Engineering | York College of Pennsylvania | Spring Semester 2018
-            Collaborated with a team to create a full-stack web food delivery system for York College’s food court
-        </p>
+            <ul>Full-Stack Software Engineer| ReturnLogic | 2020
+                <li>Migrated existing codebase from micro-service architecture to monolithic TypeScript API with OpenAPI
+                    standards
+                </li>
+                <li>Developed features that provided additional functionality for retailers to create a robust returns
+                    policy
+                </li>
+                <li>Took initiative in developing a new feature that doubled total returns processed and increased outreach
+                    of our returns process outside of e-commerce purchases
+                </li>
+                <li>Enhanced shopper experience by simplifying obstacles within the returns process</li>
+                <li>Created customizable upsell opportunities to increase exchange rate and customer lifetime value</li>
+                <li>Built a deployment process for public API Documentation with AWS S3, CloudFront, and Bitbucket</li>
+            </ul>
+        </div>
+        <div id="projectsDIV">
         <h4>Computer Science Projects</h4>
+            <p>Senior Software Design | York College of Pennsylvania | Fall Semester 2019
+                Developed a personal management mobile application in React-Native for iOS
+                YCP Hackathon | York College of Pennsylvania | October 2018
+                Developed a Java application with JavaFX GUI that compares sets of data from a colorimeter device
+                Awarded 1st place for fulfilling the sponsor’s challenge
+                Awarded 3rd place for Best YCP Hack and 3rd place for Best of Show
+                Software Engineering | York College of Pennsylvania | Spring Semester 2018
+                Collaborated with a team to create a full-stack web food delivery system for York College’s food court
+            </p>
         <ul>Software Engineering Internship| ReturnLogic | 2019
             <li>Developed billing webpages for invoices and reports which reduced accounting operations time by
                 90%
@@ -205,20 +216,8 @@
             <li>Prepared various project related documents such as test cases, styling guidelines, and onboarding
             </li>
         </ul>
-        <ul>Full-Stack Software Engineer| ReturnLogic | 2020
-            <li>Migrated existing codebase from micro-service architecture to monolithic TypeScript API with OpenAPI
-                standards
-            </li>
-            <li>Developed features that provided additional functionality for retailers to create a robust returns
-                policy
-            </li>
-            <li>Took initiative in developing a new feature that doubled total returns processed and increased outreach
-                of our returns process outside of e-commerce purchases
-            </li>
-            <li>Enhanced shopper experience by simplifying obstacles within the returns process</li>
-            <li>Created customizable upsell opportunities to increase exchange rate and customer lifetime value</li>
-            <li>Built a deployment process for public API Documentation with AWS S3, CloudFront, and Bitbucket</li>
-        </ul>
+        </div>
+    </div>
     </div>
 </div>
 </body>
