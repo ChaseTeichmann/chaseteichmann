@@ -25,11 +25,11 @@
         <div class="row">
             <div class="col-lg-2" style="padding-left: 0px; padding-right: 0px">
                 <div class="vertical-menu">
-                    <a onclick="developmentDIV()">Development Environments</a>
-                    <a onclick="skillsDIV()">Career Skills</a>
-                    <a onclick="workDIV()">Work Experience</a>
-                    <a onclick="educationDIV()">Education</a>
-                    <a onclick="projectsDIV()">Personal Projects</a>
+                    <a onclick="closeAll();developmentDIV();">Development Environments</a>
+                    <a onclick="closeAll();aboutMeDIV();">Career Skills</a>
+                    <a onclick="closeAll();workDIV();">Work Experience</a>
+                    <a onclick="closeAll();educationDIV();">Education</a>
+                    <a onclick="closeAll();projectsDIV();">Personal Projects</a>
                 </div>
             </div>
             <div class="col-lg-10 pull-right">
@@ -159,24 +159,21 @@
                              style="width: 100px; height: 100px;"/>
                         <p>Docker</p>
                     </div>
-                </div>
-                    <p>Development Environments: WebStorm | DataGrip | Eclipse | Atom | Visual Studio | Xcode</p>
-                    Frameworks and Languages: JavaScript| TypeScript | Java | Node.JS| Angular.JS | React-Native | SQL
-                    Database Experience: PostgresSQL | Firebase | mySQL | DerbyDB
-                    Other Tools and Services: AWS | Docker | DataDog | Gulp | OAuth2 | ESLint | Bitbucket | GitHub
-                    Skills: User Oriented | Problem Solving | Initiative Taker | Scrum Methodologies | Quick Learning</p>
-
-                </div>
         </div>
         </div>
 
-        <!--
-        <img alt="" src="" style="width: 100px; height: 100px;"/>
-        <img alt="" src="" style="width: 100px; height: 100px;"/>
-        <img alt="" src="" style="width: 100px; height: 100px;"/>
-        <img alt="" src="" style="width: 100px; height: 100px;"/>
+                <div class="col-lg-12 pull-right" id="aboutMeDIV">
+                    <div class="col-md-3 pull-left">
+                <h4>About Me</h4>
+                <p>Development Environments: WebStorm | DataGrip | Eclipse | Atom | Visual Studio | Xcode</p>
+                Frameworks and Languages: JavaScript| TypeScript | Java | Node.JS| Angular.JS | React-Native | SQL
+                Database Experience: PostgresSQL | Firebase | mySQL | DerbyDB
+                Other Tools and Services: AWS | Docker | DataDog | Gulp | OAuth2 | ESLint | Bitbucket | GitHub
+                Skills: User Oriented | Problem Solving | Initiative Taker | Scrum Methodologies | Quick Learning</p>
 
-        -->
+            </div>
+            </div>
+
         <div id="workDIV">
         <h4>Work Experience</h4>
             <ul>Full-Stack Software Engineer| ReturnLogic | 2020
