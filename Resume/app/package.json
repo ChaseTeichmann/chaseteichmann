@@ -1,6 +1,7 @@
 {
   "name": "retro-template",
   "description": "Retro - One Page Modern Resume Template",
+  "homepage": "https://chaseteichmann.github.io/chaseteichmann",
   "version": "1.0.0",
   "author": "Syed Muaz Ali",
   "private": true,
@@ -54,6 +55,7 @@
     "babel-eslint": "10.0.3",
     "bootstrap": "3.3.7",
     "font-awesome": "4.7.0",
+    "gh-pages": "^4.0.0",
     "modern-normalize": "0.6.0",
     "node-sass": "^4.14.1",
     "prismjs": "1.18.0",
@@ -66,6 +68,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop -p 8636"
+    "develop": "gatsby develop -p 8636",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
